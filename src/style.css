@@ -29,6 +29,7 @@ img {
 
 .details {
   padding-left: 50px;
+  margin: 15px 0px 20px 0px;
 }
 
 .weather-app {
@@ -95,4 +96,6 @@ img {
 
 #description {
   font-weight: 600;
+  margin: 30px 10px 10px 115px;
+  font-size: 30px;
 }
