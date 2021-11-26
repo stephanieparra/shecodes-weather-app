@@ -13,6 +13,7 @@ ul {
 }
 li {
   color: #000;
+  text-transform: capitalize;
   font-family: monospace;
   font-size: 16px;
   font-weight: 400;
