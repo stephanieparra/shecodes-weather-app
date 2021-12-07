@@ -55,6 +55,15 @@ img {
   left: 5px;
 }
 
+.weather-app .active {
+  color: #000;
+  cursor: default;
+}
+
+.weather-app .active:hover {
+  text-decoration: none;
+}
+
 .search-form {
   margin-bottom: 20px;
 }
