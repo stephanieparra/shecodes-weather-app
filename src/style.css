@@ -49,10 +49,15 @@ img {
   line-height: 60px;
 }
 
-.units {
+.units a {
+  text-decoration: none;
   position: relative;
   top: -28px;
   left: 5px;
+}
+
+.wind-unit {
+  text-transform: lowercase;
 }
 
 .weather-app .active {
