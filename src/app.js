@@ -36,7 +36,7 @@ function formatDate(date) {
   ];
   let month = months[monthIndex];
 
-  return `${day}, ${month} ${todaysDate} // ${hours}:${minutes}`;
+  return `${day}, ${month} ${todaysDate} // Last updated: ${hours}:${minutes}`;
 }
 
 function displayWeatherCondition(response) {
