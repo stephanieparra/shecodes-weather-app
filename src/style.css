@@ -94,8 +94,8 @@ img {
 }
 
 .btn-primary:focus {
-  background-color: #fff;
-  color: #bf165d;
+  background-color: #bf165d;
+  color: #fff;
   border: 1px solid #bf165d;
   outline: 0;
   box-shadow: none;
@@ -115,8 +115,8 @@ img {
 }
 
 .btn-success:focus {
-  background: #fff;
-  color: #840572;
+  background: #840572;
+  color: #fff;
   border: 1px solid #840572;
   outline: 0;
   box-shadow: none;
