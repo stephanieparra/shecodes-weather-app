@@ -127,6 +127,7 @@ img {
   padding-top: 20px;
   background-color: #fceeeb;
   font-family: "Vollkorn", serif;
+  text-align: center;
 }
 
 .week-day {
@@ -152,6 +153,11 @@ img {
 .condition {
   text-align: center;
   margin: 18px 5px 10px 5px;
+  font-weight: bold;
+}
+
+.forecast-min {
+  opacity: 0.5;
 }
 
 .footer {
