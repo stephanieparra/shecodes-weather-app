@@ -84,16 +84,42 @@ img {
   color: #fff;
   background-color: #bf165d;
   border-color: #bf165d;
+  transition: all 200ms ease-in-out;
 }
 
-btn:hover {
-  color: #c69c6d;
+.btn-primary:hover {
+  background: #fff;
+  color: #bf165d;
+  border: 1px solid #bf165d;
+}
+
+.btn-primary:focus {
+  background-color: #fff;
+  color: #bf165d;
+  border: 1px solid #bf165d;
+  outline: 0;
+  box-shadow: none;
 }
 
 .btn-success {
   color: #fff;
   background-color: #840572;
   border-color: #840572;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-success:hover {
+  background: #fff;
+  color: #840572;
+  border: 1px solid #840572;
+}
+
+.btn-success:focus {
+  background: #fff;
+  color: #840572;
+  border: 1px solid #840572;
+  outline: 0;
+  box-shadow: none;
 }
 
 .card {
