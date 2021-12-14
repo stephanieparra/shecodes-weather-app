@@ -1,25 +1,28 @@
 h1 {
   color: #000;
-  font-family: monospace;
+  font-family: "VollKorn", serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0px 8px 10px;
+  margin-left: 15px;
+  padding-top: 20px;
 }
 
 ul {
   margin: 20px 0 20px 0;
   padding: 0;
 }
+
 li {
   color: #000;
   text-transform: capitalize;
-  font-family: monospace;
+  font-family: "Vollkorn", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   list-style: none;
-  margin: 10px;
+  margin: 7px;
+  padding: 7px;
 }
 
 img {
@@ -39,12 +42,12 @@ img {
   max-width: 600px;
   margin: 50px auto 25px auto;
   border-radius: 10px;
-  background-color: #eaebff;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
 }
 
 .temperature {
   color: #000;
-  font-family: monospace;
+  font-family: "Vollkorn", serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 60px;
@@ -77,8 +80,20 @@ img {
   margin-bottom: 20px;
 }
 
-.btn-warning {
-  padding-left: 5px;
+.btn-primary {
+  color: #fff;
+  background-color: #bf165d;
+  border-color: #bf165d;
+}
+
+btn:hover {
+  color: #c69c6d;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #840572;
+  border-color: #840572;
 }
 
 .card {
@@ -109,8 +124,8 @@ img {
 }
 
 .footer {
-  margin: 7px auto;
-  font-family: monospace;
+  margin: 7px auto 45px;
+  font-family: "Vollkorn", serif;
   font-size: 14px;
   text-align: center;
 }
