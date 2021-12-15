@@ -39,7 +39,31 @@ function formatDate(date) {
   return `${day}, ${month} ${todaysDate} // Last updated: ${hours}:${minutes}`;
 }
 
-function displayWeatherCondition(response) {
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = "";
+
+  forecastHTML = `
+  <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <h5 class="week-day">Mon</h5>
+                <div class="card-body">
+                  <img
+                    src="images/day-rain.png"
+                    class="card-img"
+                    alt="rainy icon"
+                  />
+                  <p class="condition">Rain</p>
+                  <span class="forecast-max">67° |</span>
+                  <span class="forecast-min">71°</span>
+                </div>
+              </div>
+            </div>`;
+}
+
+function displayTemperature(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -59,7 +83,7 @@ function displayWeatherCondition(response) {
 function searchCity(city) {
   let apiKey = "88e64de9fc51e9cca98f8a475dc584f5";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function handleSubmit(event) {
@@ -71,7 +95,7 @@ function handleSubmit(event) {
 function searchLocation(position) {
   let apiKey = "88e64de9fc51e9cca98f8a475dc584f5";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function getCurrentLocation(event) {
@@ -121,3 +145,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Los Angeles");
+displayForecast();
