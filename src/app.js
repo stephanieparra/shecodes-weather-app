@@ -60,7 +60,8 @@ function displayForecast() {
                   <span class="forecast-min">71°</span>
                 </div>
               </div>
-            </div>`;
+            </div>
+          </div>`;
 }
 
 function displayTemperature(response) {
