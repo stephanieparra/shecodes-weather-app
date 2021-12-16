@@ -35,22 +35,31 @@ function formatDate(date) {
     "December",
   ];
   let month = months[monthIndex];
-
   return `${day}, ${month} ${todaysDate} // Last updated: ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
+
   let forecastHTML = `<div class="row">`;
-  let days = ["Weds", "Thurs", "Fri", "Sat"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 4) {
+      forecastHTML =
+        forecastHTML +
+        `
       <div class="col-3">
         <div class="card">
-          <h5 class="week-day">${day}</h5>
+          <h5 class="week-day">${formatDay(forecastDay.dt)}</h5>
             <div class="card-body">
               <img
                     src="images/day-rain.png"
@@ -58,11 +67,16 @@ function displayForecast(response) {
                     alt="rainy icon"
               />
               <p class="condition">Rain</p>
-                <span class="forecast-max">67° |</span>
-                <span class="forecast-min">71°</span>
+                <span class="forecast-max">${Math.round(
+                  forecastDay.temp.max
+                )}° |</span>
+                <span class="forecast-min">${Math.round(
+                  forecastDay.temp.min
+                )}°</span>
             </div>      
         </div>
       </div>`;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
