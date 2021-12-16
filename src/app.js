@@ -41,27 +41,30 @@ function formatDate(date) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-
-  let forecastHTML = "";
-
-  forecastHTML = `
-  <div class="row">
-            <div class="col-3">
-              <div class="card">
-                <h5 class="week-day">Mon</h5>
-                <div class="card-body">
-                  <img
+  let forecastHTML = `<div class="row">`;
+  let days = ["Weds", "Thurs", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-3">
+        <div class="card">
+          <h5 class="week-day">${day}</h5>
+            <div class="card-body">
+              <img
                     src="images/day-rain.png"
                     class="card-img"
                     alt="rainy icon"
-                  />
-                  <p class="condition">Rain</p>
-                  <span class="forecast-max">67° |</span>
-                  <span class="forecast-min">71°</span>
-                </div>
-              </div>
-            </div>
-          </div>`;
+              />
+              <p class="condition">Rain</p>
+                <span class="forecast-max">67° |</span>
+                <span class="forecast-min">71°</span>
+            </div>      
+        </div>
+      </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
