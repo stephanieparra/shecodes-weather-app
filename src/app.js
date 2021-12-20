@@ -62,9 +62,11 @@ function displayForecast(response) {
           <h5 class="week-day">${formatDay(forecastDay.dt)}</h5>
             <div class="card-body">
               <img
-                    src="images/day-rain.png"
+                    src="http://openweathermap.org/img/wn/${
+                      forecastDay.weather[0].icon
+                    }@2x.png"
                     class="card-img"
-                    alt="rainy icon"
+                    alt=""
               />
               <p class="condition">Rain</p>
                 <span class="forecast-max">${Math.round(
