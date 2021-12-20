@@ -1,3 +1,7 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
+}
+
 h1 {
   color: #000;
   font-family: "VollKorn", serif;
@@ -37,7 +41,7 @@ img {
 }
 
 .weather-app {
-  border: 1px solid #000;
+  border: 1px solid #840572;
   padding: 30px 30px 50px 30px;
   max-width: 600px;
   margin: 50px auto 25px auto;
@@ -57,6 +61,7 @@ img {
   position: relative;
   top: -28px;
   left: 5px;
+  font-family: "Vollkorn", serif;
 }
 
 .units a {
