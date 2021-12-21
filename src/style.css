@@ -5,7 +5,7 @@ body {
 h1 {
   color: #000;
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 400;
   line-height: 26px;
   margin-left: 15px;
@@ -29,7 +29,11 @@ li {
   padding: 7px;
 }
 
-img {
+li.description {
+  font-size: 27px;
+}
+
+#icon {
   width: 100px;
   height: 100px;
   margin: 20px 20px 30px;
@@ -41,8 +45,8 @@ img {
 }
 
 .weather-app {
-  border: 1px solid #ec6e4b;
-  box-shadow: 5px 10px #f7b9a1;
+  border: 1px solid #f7b9a1;
+  box-shadow: 10px 10px 5px -4px rgba(247, 185, 161, 0.64);
   padding: 30px 30px 50px 30px;
   max-width: 600px;
   margin: 50px auto 25px auto;
@@ -109,8 +113,8 @@ img {
 
 .btn-success {
   color: #fff;
-  background-color: #291b25;
-  border-color: #291b25;
+  background-color: #61a6ab;
+  border-color: #61a6ab;
   transition: all 200ms ease-in-out;
 }
 
@@ -121,9 +125,9 @@ img {
 }
 
 .btn-success:focus {
-  background: #291b25;
+  background: #61a6ab;
   color: #fff;
-  border: 1px solid #291b25;
+  border: 1px solid #61a6ab;
   outline: 0;
   box-shadow: none;
 }
