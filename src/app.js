@@ -61,11 +61,12 @@ function displayForecast(response) {
         <div class="card">
           <h5 class="week-day">${formatDay(forecastDay.dt)}</h5>
             <div class="card-body">
-              <img src="images/${forecastDay.weather[0].icon}@2x.png"
+              <img src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png"
                     class="card-img"
                     alt="forecast-icon"
               />
-              <p class="condition">Rain</p>
                 <span class="forecast-max">${Math.round(
                   forecastDay.temp.max
                 )}° |</span>
