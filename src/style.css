@@ -1,5 +1,5 @@
 body {
-  background-color: #f6f6e9;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
 }
 
 h1 {
@@ -51,7 +51,7 @@ li.description {
   max-width: 600px;
   margin: 50px auto 25px auto;
   border-radius: 10px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/318/original/Untitled_design_%281%29.png?1640046012");
+  background: #ffefec;
 }
 
 .temperature {
@@ -92,21 +92,21 @@ li.description {
 
 .btn-primary {
   color: #fff;
-  background-color: #61a6ab;
-  border-color: #61a6ab;
+  background-color: #840572;
+  border-color: #840572;
   transition: all 200ms ease-in-out;
 }
 
 .btn-primary:hover {
-  background: #fff;
-  color: #291b25;
-  border: 1px solid #291b25;
+  background: #b3b5ff;
+  color: #bf165d;
+  border: 1px solid #bf165d;
 }
 
 .btn-primary:focus {
-  background-color: #61a6ab;
+  background-color: #840572;
   color: #fff;
-  border: 1px solid #61a6ab;
+  border: 1px solid #840572;
   outline: 0;
   box-shadow: none;
 }
@@ -135,7 +135,7 @@ li.description {
 .card {
   margin: 50px 0 0 0;
   padding-top: 20px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/317/original/Untitled_design.png?1640045833");
+  background: #b3b5ff;
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
 }
