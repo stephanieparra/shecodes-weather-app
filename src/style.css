@@ -41,7 +41,8 @@ img {
 }
 
 .weather-app {
-  border: 1px solid #840572;
+  border: 1px solid #ec6e4b;
+  box-shadow: 5px 10px #f7b9a1;
   padding: 30px 30px 50px 30px;
   max-width: 600px;
   margin: 50px auto 25px auto;
@@ -87,42 +88,42 @@ img {
 
 .btn-primary {
   color: #fff;
-  background-color: #bf165d;
-  border-color: #bf165d;
+  background-color: #61a6ab;
+  border-color: #61a6ab;
   transition: all 200ms ease-in-out;
 }
 
 .btn-primary:hover {
   background: #fff;
-  color: #bf165d;
-  border: 1px solid #bf165d;
+  color: #291b25;
+  border: 1px solid #291b25;
 }
 
 .btn-primary:focus {
-  background-color: #bf165d;
+  background-color: #61a6ab;
   color: #fff;
-  border: 1px solid #bf165d;
+  border: 1px solid #61a6ab;
   outline: 0;
   box-shadow: none;
 }
 
 .btn-success {
   color: #fff;
-  background-color: #840572;
-  border-color: #840572;
+  background-color: #291b25;
+  border-color: #291b25;
   transition: all 200ms ease-in-out;
 }
 
 .btn-success:hover {
   background: #fff;
-  color: #840572;
-  border: 1px solid #840572;
+  color: #291b25;
+  border: 1px solid #291b25;
 }
 
 .btn-success:focus {
-  background: #840572;
+  background: #291b25;
   color: #fff;
-  border: 1px solid #840572;
+  border: 1px solid #291b25;
   outline: 0;
   box-shadow: none;
 }
