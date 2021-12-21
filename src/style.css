@@ -1,5 +1,5 @@
 body {
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/339/original/speckle-background-edit.png?1640070762");
 }
 
 h1 {
@@ -71,10 +71,7 @@ li.description {
   top: -28px;
   left: 5px;
   font-family: "Kumbh Sans", sans-serif;
-}
-
-.units a {
-  text-decoration: none;
+  color: #bf165d;
 }
 
 .wind-unit {
@@ -92,6 +89,10 @@ li.description {
 
 .search-form {
   margin-bottom: 20px;
+}
+
+#city-input.form-control {
+  box-shadow: 3px 9px 10px -5px rgba(84, 77, 77, 0.75);
 }
 
 .btn-primary {
@@ -143,7 +144,12 @@ li.description {
   background: #b3b5ff;
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
-  border: 0px;
+  border: 1px solid #ffefec;
+  box-shadow: 10px 10px 5px 0px rgba(84, 77, 77, 0.75);
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .week-day {
