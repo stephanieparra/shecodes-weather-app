@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #000;
+  color: #3b3c40;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 35px;
   font-weight: 400;
@@ -18,7 +18,7 @@ ul {
 }
 
 li {
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
@@ -27,6 +27,10 @@ li {
   list-style: none;
   margin: 7px;
   padding: 7px;
+}
+
+li#date-time {
+  color: #3b3c40;
 }
 
 li.description {
@@ -51,11 +55,11 @@ li.description {
   max-width: 600px;
   margin: 50px auto 25px auto;
   border-radius: 10px;
-  background: #ffefec;
+  background: #b3b5ff;
 }
 
 .temperature {
-  color: #000;
+  color: #fff;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 48px;
   font-weight: 400;
@@ -98,9 +102,9 @@ li.description {
 }
 
 .btn-primary:hover {
-  background: #b3b5ff;
-  color: #bf165d;
-  border: 1px solid #bf165d;
+  background: #fff;
+  color: #3b3c40;
+  border: 1px solid #3b3c40;
 }
 
 .btn-primary:focus {
@@ -113,9 +117,10 @@ li.description {
 
 .btn-success {
   color: #fff;
-  background-color: #61a6ab;
-  border-color: #61a6ab;
+  background-color: #bf165d;
+  border-color: #bf165d;
   transition: all 200ms ease-in-out;
+  padding: 6px 15px 6px 15px;
 }
 
 .btn-success:hover {
@@ -125,9 +130,9 @@ li.description {
 }
 
 .btn-success:focus {
-  background: #61a6ab;
+  background: #bf165d;
   color: #fff;
-  border: 1px solid #61a6ab;
+  border: 1px solid #bf165d;
   outline: 0;
   box-shadow: none;
 }
@@ -138,6 +143,7 @@ li.description {
   background: #b3b5ff;
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
+  border: 0px;
 }
 
 .week-day {
@@ -148,7 +154,7 @@ li.description {
   width: 50px;
   height: 50px;
   display: block;
-  margin: 5px auto;
+  margin: 0px auto;
 }
 
 .card-body {
@@ -158,6 +164,7 @@ li.description {
 .week-day {
   margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
 
 .condition {
@@ -167,6 +174,7 @@ li.description {
 }
 
 .forecast-min {
+  color: #bf165d;
   opacity: 0.5;
 }
 
