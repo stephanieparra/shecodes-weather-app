@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
+  background-color: #f6f6e9;
 }
 
 h1 {
@@ -46,7 +46,7 @@ img {
   max-width: 600px;
   margin: 50px auto 25px auto;
   border-radius: 10px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/713/original/speckle-background-two.png?1639441866");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/318/original/Untitled_design_%281%29.png?1640046012");
 }
 
 .temperature {
@@ -130,7 +130,7 @@ img {
 .card {
   margin: 50px 0 0 0;
   padding-top: 20px;
-  background-color: #fceeeb;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/317/original/Untitled_design.png?1640045833");
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
 }
