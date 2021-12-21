@@ -35,7 +35,7 @@ function formatDate(date) {
     "December",
   ];
   let month = months[monthIndex];
-  return `${day}, ${month} ${todaysDate} // Last updated: ${hours}:${minutes}`;
+  return `${day}, ${month} ${todaysDate} // Last Updated: ${hours}:${minutes}`;
 }
 
 function formatDay(timestamp) {
